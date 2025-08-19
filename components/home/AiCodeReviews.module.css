@@ -1,0 +1,121 @@
+.aiCodeReviews {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.messageBox {
+  position: absolute;
+  border-radius: 8px; /* Adjusted for consistency with shadcn/ui radius */
+  overflow: hidden;
+  padding: 9.49px;
+  box-sizing: border-box;
+}
+
+.messageBoxBackground {
+  width: 316.28px;
+  height: 120px;
+  backdrop-filter: blur(16px); /* Updated blur value */
+  opacity: 0.6;
+  border: 0.79px solid hsl(var(--border));
+  background: linear-gradient(180deg, hsl(var(--card)) 0%, transparent 100%);
+  left: 50%;
+  top: 50%;
+  transform: translate(calc(-50% + 11.86px), calc(-50% - 7.3px)); /* Maintain relative offset for centering */
+}
+
+.messageBoxMain {
+  width: 340px;
+  height: 221.40px;
+  backdrop-filter: blur(16px); /* Updated blur value */
+  border: 1px solid hsl(var(--border));
+  background: linear-gradient(180deg, hsl(var(--card) / 0.9) 0%, hsl(var(--card) / 0.7) 100%);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Center the main box */
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.codeBlock {
+  white-space: pre-wrap;
+  word-break: break-words;
+  font-size: 10.28px;
+  font-family: "Geist Mono", monospace;
+  line-height: 15.81px;
+  color: hsl(var(--foreground));
+  width: 100%;
+  flex-grow: 1;
+}
+
+.codeBlock p {
+  margin: 0;
+}
+
+.highlight {
+  position: absolute;
+  left: -8.64px;
+  width: 339.20px;
+}
+
+.highlightHeader {
+  height: 45.47px;
+  top: 80.79px;
+  background: hsl(var(--primary) / 0.1);
+}
+
+.highlightMain {
+  height: 33.12px;
+  top: 47.67px;
+  background: hsl(var(--accent) / 0.2);
+}
+
+.applyButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.95px;
+  padding: 3.16px 6.33px;
+  border-radius: 5.53px;
+  box-shadow: 0px 0.7906976938247681px 2.3720932006835938px rgba(0, 0, 0, 0.1);
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  font-size: 10.28px;
+  line-height: 15.81px;
+  font-weight: 500;
+  margin-top: auto;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.buttonText {
+  font-family: "Geist", sans-serif;
+}
+
+.buttonShortcut {
+  font-family: "SF Pro", sans-serif;
+}
+
+/* Theme specific styles for code block text color */
+.aiCodeReviews[data-theme="dark"] .messageBoxBackground .codeBlock p {
+  color: hsl(var(--muted-foreground));
+}
+
+.aiCodeReviews[data-theme="dark"] .messageBoxMain .codeBlock p {
+  color: hsl(var(--foreground));
+}
+
+/* Specific stroke color for the SVG path */
+.aiCodeReviews[data-theme="dark"] .codeBlock svg path {
+  stroke: #22c55e;
+}
