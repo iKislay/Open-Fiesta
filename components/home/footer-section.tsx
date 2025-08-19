@@ -15,7 +15,7 @@ export function FooterSection() {
           <a href="https://x.com/whyKislay" aria-label="Twitter" className="w-4 h-4 flex items-center justify-center">
             <Twitter className="w-full h-full text-muted-foreground" />
           </a>
-          <a href="https://github.com/imKislay" aria-label="GitHub" className="w-4 h-4 flex items-center justify-center">
+          <a href="https://github.com/iKislay" aria-label="GitHub" className="w-4 h-4 flex items-center justify-center">
             <Github className="w-full h-full text-muted-foreground" />
           </a>
           <a href="https://www.linkedin.com/in/kislayy/" aria-label="LinkedIn" className="w-4 h-4 flex items-center justify-center">

@@ -325,7 +325,7 @@ export default function Home() {
                   <span className="opacity-90 hidden sm:inline text-sm">Made by <span className="font-semibold underline decoration-dotted">Kislay</span></span>
                 </a>
                 <a
-                  href="https://github.com/imKislay/Open-Fiesta"
+                  href="https://github.com/iKislay/Open-Fiesta"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs px-2.5 py-1 rounded bg-[#e42a42] text-white border border-white/10 hover:bg-[#cf243a] ml-1"

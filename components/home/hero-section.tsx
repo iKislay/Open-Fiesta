@@ -447,7 +447,7 @@ export function HeroSection() {
         </p>
       </div>
 
-      <Link href="https://github.com/imKislay/ai-Fiesta" target="_blank" rel="noopener noreferrer" className="">
+      <Link href="https://github.com/iKislay/ai-Fiesta" target="_blank" rel="noopener noreferrer" className="">
         <Button className="relative z-10 bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-3 rounded-full font-medium text-base shadow-lg ring-1 ring-white/10 hover:cursor-pointer transition-colors duration-200">
           Star on GitHub
           <Star className="ml-2 h-4 w-4 inline-block text-yellow-300" />
